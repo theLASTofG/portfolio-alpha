@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de João Vitor Gomes — Programador. Código, criatividade e rock and roll." />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="João Vitor Gomes — Programador" />
+  <meta property="og:description" content="Portfólio de João Vitor Gomes — Programador. Código, criatividade e rock and roll." />
+  <meta property="og:url" content="https://SEU-USUARIO.github.io/SEU-REPOSITORIO" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:image" content="https://SEU-USUARIO.github.io/SEU-REPOSITORIO/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="João Vitor Gomes — Programador" />
+  <meta name="twitter:description" content="Portfólio de João Vitor Gomes — Programador. Código, criatividade e rock and roll." />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://SEU-USUARIO.github.io/SEU-REPOSITORIO" />
+
+  <!-- Favicon (SVG inline) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23080906'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='monospace' font-weight='900' font-size='16' fill='%23C69A20'%3EJVG%3C/text%3E%3C/svg%3E" />
+
+  <title>João Vitor Gomes — Programador</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Skip to main content — acessibilidade -->
+  <a class="skip-link" href="#main-content">Pular para o conteúdo principal</a>
+
+  <!-- ══════════════════════════════════════════
+       HEADER
+  ══════════════════════════════════════════ -->
+  <header class="header" id="header" role="banner">
+    <div class="header__inner container">
+      <a href="#inicio" class="header__logo" aria-label="Voltar ao início — João Vitor Gomes">
+        <span class="logo-monogram" aria-hidden="true">JVG</span>
+      </a>
+
+      <nav class="nav" id="main-nav" aria-label="Navegação principal">
+        <ul class="nav__list" role="list">
+          <li><a href="#inicio" class="nav__link" data-section="inicio" aria-current="page">Início</a></li>
+          <li><a href="#sobre" class="nav__link" data-section="sobre">Sobre</a></li>
+          <li><a href="#habilidades" class="nav__link" data-section="habilidades">Habilidades</a></li>
+          <li><a href="#projetos" class="nav__link" data-section="projetos">Projetos</a></li>
+          <li><a href="#contato" class="nav__link" data-section="contato">Contato</a></li>
+        </ul>
+        <a href="#" class="btn btn--outline-sm nav__cv" aria-label="Baixar currículo (em breve)">Currículo</a>
+      </nav>
+
+      <button type="button" class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu mobile" hidden>
+    <button type="button" class="mobile-menu__close" id="mobile-close" aria-label="Fechar menu">&#x2715;</button>
+    <nav aria-label="Navegação mobile">
+      <ul class="mobile-menu__list" role="list">
+        <li><a href="#inicio" class="mobile-menu__link">01 — Início</a></li>
+        <li><a href="#sobre" class="mobile-menu__link">02 — Sobre</a></li>
+        <li><a href="#habilidades" class="mobile-menu__link">03 — Habilidades</a></li>
+        <li><a href="#projetos" class="mobile-menu__link">04 — Projetos</a></li>
+        <li><a href="#contato" class="mobile-menu__link">05 — Contato</a></li>
+      </ul>
+      <div class="mobile-menu__footer">
+        <span class="mobile-menu__tagline">Keep the fire alive.</span>
+      </div>
+    </nav>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ══════════════════════════════════════════
+         HERO
+    ══════════════════════════════════════════ -->
+    <section class="hero" id="inicio" aria-label="Apresentação">
+      <div class="hero__inner container">
+        <div class="hero__content">
+          <p class="hero__eyebrow">
+            <span class="hero__eyebrow-line" aria-hidden="true"></span>
+            Portfólio Pessoal
+            <span class="hero__diamond" aria-hidden="true">◆</span>
+          </p>
+          <h1 class="hero__name">
+            <span class="hero__name-word">João</span>
+            <span class="hero__name-word">Vitor</span>
+            <span class="hero__name-word">Gomes</span>
+          </h1>
+          <p class="hero__role">
+            <span class="hero__role-marker" aria-hidden="true">+</span>
+            Programador
+            <span class="hero__role-marker" aria-hidden="true">+</span>
+          </p>
+          <p class="hero__tagline">Código, criatividade e rock and roll.</p>
+          <div class="hero__actions">
+            <a href="#projetos" class="btn btn--primary">Ver projetos <span aria-hidden="true">+</span></a>
+            <a href="#sobre" class="btn btn--outline">Sobre mim <span aria-hidden="true">+</span></a>
+          </div>
+          <div class="hero__social" aria-label="Redes sociais">
+            <a href="#" class="hero__social-link" aria-label="GitHub (em breve)" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.11-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.65 1.65.25 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="#" class="hero__social-link" aria-label="LinkedIn (em breve)" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.35V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.35-1.85 3.58 0 4.25 2.36 4.25 5.43v6.31zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM3.56 20.45h3.55V9H3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0z"/></svg>
+              LinkedIn
+            </a>
+            <a href="mailto:seuemail@exemplo.com" class="hero__social-link" aria-label="Enviar e-mail">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              E-mail
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__stage">
+            <!-- Spotlight -->
+            <div class="stage-spotlight"></div>
+            <!-- Amplifier SVG composition -->
+            <svg class="stage-amp" viewBox="0 0 340 380" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Amplificador vintage">
+              <!-- Amp body -->
+              <rect x="30" y="120" width="280" height="200" rx="6" fill="#1a1a14" stroke="#4C472D" stroke-width="1.5"/>
+              <!-- Amp tolex texture lines -->
+              <line x1="30" y1="135" x2="310" y2="135" stroke="#4C472D" stroke-width="0.5" opacity="0.4"/>
+              <line x1="30" y1="150" x2="310" y2="150" stroke="#4C472D" stroke-width="0.5" opacity="0.3"/>
+              <!-- Speaker grille area -->
+              <rect x="50" y="145" width="180" height="155" rx="4" fill="#111108" stroke="#4C472D" stroke-width="1"/>
+              <!-- Speaker circles -->
+              <circle cx="140" cy="222" r="64" fill="none" stroke="#4C472D" stroke-width="1"/>
+              <circle cx="140" cy="222" r="50" fill="none" stroke="#737A3F" stroke-width="0.5" opacity="0.6"/>
+              <circle cx="140" cy="222" r="30" fill="none" stroke="#4C472D" stroke-width="1"/>
+              <circle cx="140" cy="222" r="10" fill="#2a2a1f" stroke="#737A3F" stroke-width="1"/>
+              <circle cx="140" cy="222" r="3" fill="#737A3F"/>
+              <!-- Grille dots pattern -->
+              <g opacity="0.15">
+                <circle cx="60" cy="155" r="1" fill="#AAA18C"/>
+                <circle cx="68" cy="155" r="1" fill="#AAA18C"/>
+                <circle cx="76" cy="155" r="1" fill="#AAA18C"/>
+                <circle cx="60" cy="163" r="1" fill="#AAA18C"/>
+                <circle cx="68" cy="163" r="1" fill="#AAA18C"/>
+                <circle cx="76" cy="163" r="1" fill="#AAA18C"/>
+              </g>
+              <!-- Control panel -->
+              <rect x="242" y="155" width="56" height="135" rx="3" fill="#0d0d0b" stroke="#4C472D" stroke-width="1"/>
+              <!-- Knobs -->
+              <circle cx="270" cy="180" r="12" fill="#1a1a14" stroke="#737A3F" stroke-width="1.5"/>
+              <circle cx="270" cy="180" r="6" fill="#111108" stroke="#4C472D" stroke-width="1"/>
+              <line x1="270" y1="172" x2="270" y2="174" stroke="#C69A20" stroke-width="2"/>
+              <circle cx="270" cy="215" r="12" fill="#1a1a14" stroke="#737A3F" stroke-width="1.5"/>
+              <circle cx="270" cy="215" r="6" fill="#111108" stroke="#4C472D" stroke-width="1"/>
+              <line x1="278" y1="210" x2="276" y2="212" stroke="#C69A20" stroke-width="2"/>
+              <circle cx="270" cy="250" r="12" fill="#1a1a14" stroke="#737A3F" stroke-width="1.5"/>
+              <circle cx="270" cy="250" r="6" fill="#111108" stroke="#4C472D" stroke-width="1"/>
+              <line x1="263" y1="243" x2="265" y2="245" stroke="#C69A20" stroke-width="2"/>
+              <!-- Power LED -->
+              <circle cx="270" cy="278" r="4" fill="#7B292B" opacity="0.9"/>
+              <!-- Amp top handle -->
+              <path d="M120 120 Q170 105 220 120" stroke="#4C472D" stroke-width="2" fill="none"/>
+              <!-- Amp feet -->
+              <rect x="40" y="316" width="20" height="8" rx="2" fill="#111108" stroke="#4C472D" stroke-width="1"/>
+              <rect x="280" y="316" width="20" height="8" rx="2" fill="#111108" stroke="#4C472D" stroke-width="1"/>
+            </svg>
+
+            <!-- Vinyl record -->
+            <svg class="stage-vinyl" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Disco de vinil">
+              <circle cx="100" cy="100" r="98" fill="#0e0e0b" stroke="#4C472D" stroke-width="1.5"/>
+              <circle cx="100" cy="100" r="85" fill="none" stroke="#1a1a14" stroke-width="0.5"/>
+              <circle cx="100" cy="100" r="72" fill="none" stroke="#1a1a14" stroke-width="0.5"/>
+              <circle cx="100" cy="100" r="58" fill="none" stroke="#1a1a14" stroke-width="0.5"/>
+              <circle cx="100" cy="100" r="44" fill="none" stroke="#1a1a14" stroke-width="0.5"/>
+              <!-- Label -->
+              <circle cx="100" cy="100" r="30" fill="#7B292B"/>
+              <circle cx="100" cy="100" r="28" fill="none" stroke="#C69A20" stroke-width="0.5" opacity="0.6"/>
+              <text x="100" y="96" text-anchor="middle" fill="#C69A20" font-size="7" font-family="IBM Plex Mono" letter-spacing="2">JVG</text>
+              <text x="100" y="106" text-anchor="middle" fill="#E6DDC7" font-size="4.5" font-family="IBM Plex Mono" opacity="0.8">RECORDS</text>
+              <!-- Center hole -->
+              <circle cx="100" cy="100" r="5" fill="#0e0e0b"/>
+              <circle cx="100" cy="100" r="3" fill="#111108" stroke="#4C472D" stroke-width="0.5"/>
+              <!-- Groove sheen -->
+              <path d="M 100 15 A 85 85 0 0 1 185 100" stroke="#AAA18C" stroke-width="0.3" opacity="0.2" fill="none"/>
+            </svg>
+
+            <!-- Headphones -->
+            <svg class="stage-headphones" viewBox="0 0 120 90" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M20 50 Q20 15 60 15 Q100 15 100 50" stroke="#4C472D" stroke-width="3" fill="none"/>
+              <rect x="8" y="45" width="20" height="30" rx="8" fill="#1a1a14" stroke="#737A3F" stroke-width="1.5"/>
+              <rect x="92" y="45" width="20" height="30" rx="8" fill="#1a1a14" stroke="#737A3F" stroke-width="1.5"/>
+              <rect x="11" y="48" width="14" height="24" rx="6" fill="#111108"/>
+            </svg>
+
+            <!-- Poster label -->
+            <div class="stage-poster">
+              <span>LIVE</span>
+              <span>RAW</span>
+              <span>LOUD</span>
+            </div>
+
+            <!-- Decorative light beam -->
+            <div class="stage-beam" aria-hidden="true"></div>
+
+            <!-- Floor cable -->
+            <svg class="stage-cable" viewBox="0 0 200 40" fill="none" aria-hidden="true">
+              <path d="M10 20 Q50 5 90 20 Q130 35 170 20 Q185 13 195 20" stroke="#2a2a1f" stroke-width="2" fill="none"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="hero__scroll" aria-hidden="true">
+        <span class="hero__scroll-text">scroll</span>
+        <span class="hero__scroll-arrow">↓</span>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         SOBRE MIM
+    ══════════════════════════════════════════ -->
+    <section class="section sobre" id="sobre" aria-label="Sobre mim">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number" aria-hidden="true">02</span>
+          <span class="section-diamond" aria-hidden="true">◆</span>
+          <h2 class="section-title">Sobre mim</h2>
+          <span class="section-line" aria-hidden="true"></span>
+        </div>
+
+        <div class="sobre__grid">
+          <div class="sobre__image-col animate-on-scroll">
+            <div class="sobre__photo-frame">
+              <div class="sobre__photo-placeholder" aria-label="Espaço para fotografia">
+                <svg viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect width="200" height="240" fill="#111108"/>
+                  <circle cx="100" cy="90" r="40" fill="#1a1a14" stroke="#4C472D" stroke-width="1"/>
+                  <circle cx="100" cy="90" r="28" fill="#111108" stroke="#737A3F" stroke-width="0.5"/>
+                  <path d="M45 200 Q100 150 155 200" fill="#1a1a14" stroke="#4C472D" stroke-width="1"/>
+                  <text x="100" y="225" text-anchor="middle" fill="#4C472D" font-size="9" font-family="IBM Plex Mono">FOTO DO AUTOR</text>
+                </svg>
+              </div>
+              <div class="sobre__photo-badge">
+                <span class="sobre__photo-badge-text">JVG</span>
+                <span class="sobre__photo-badge-sub">Programador</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sobre__text-col animate-on-scroll">
+            <p class="sobre__intro">
+              Sou João Vitor Gomes, programador e apaixonado por tecnologia e rock and roll.
+              Este espaço será utilizado para apresentar minha trajetória, minhas habilidades
+              e meus objetivos profissionais.
+            </p>
+
+            <div class="sobre__trajectory">
+              <h3 class="sobre__subtitle">
+                <span class="sobre__subtitle-mark" aria-hidden="true">—</span>
+                Trajetória
+              </h3>
+              <p class="sobre__text">
+                <em>[Texto provisório — substitua com sua trajetória real.]</em><br>
+                Apaixonado por resolver problemas através do código, venho construindo minha
+                jornada na programação com curiosidade e dedicação. A música me inspira,
+                o código me move e os detalhes fazem toda a diferença.
+              </p>
+            </div>
+
+            <div class="sobre__goals">
+              <h3 class="sobre__subtitle">
+                <span class="sobre__subtitle-mark" aria-hidden="true">—</span>
+                Objetivos
+              </h3>
+              <p class="sobre__text">
+                <em>[Texto provisório — substitua com seus objetivos reais.]</em><br>
+                Busco oportunidades para crescer como desenvolvedor, colaborar em projetos
+                desafiadores e continuar aprendendo.
+              </p>
+            </div>
+
+            <div class="sobre__actions">
+              <a href="#" class="btn btn--primary" aria-label="Baixar currículo (em breve)">
+                Currículo <span aria-hidden="true">↓</span>
+              </a>
+              <a href="#contato" class="btn btn--ghost">
+                Fale comigo <span aria-hidden="true">+</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         HABILIDADES
+    ══════════════════════════════════════════ -->
+    <section class="section habilidades" id="habilidades" aria-label="Habilidades">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number" aria-hidden="true">03</span>
+          <span class="section-diamond" aria-hidden="true">◆</span>
+          <h2 class="section-title">Habilidades</h2>
+          <span class="section-line" aria-hidden="true"></span>
+        </div>
+
+        <div class="habilidades__categories animate-on-scroll">
+
+          <article class="skill-card">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="currentColor"><path d="M3 3h26l-2.4 27L16 33l-10.6-3L3 3zm6.9 10.1-.5-5.5H22.1l-.5 5.5H11.8l.3 3.5h9.2l-.8 8.4-4.5 1.2-4.5-1.2-.3-3.3h2.9l.2 1.6 1.7.5 1.7-.5.2-2.2H9.9l-.9-9.9H23l.1-1.5H8.9l.5 5.5H9z"/></svg>
+            </div>
+            <h3 class="skill-card__title">Front-End</h3>
+            <ul class="skill-card__list" role="list">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>React</li>
+            </ul>
+            <span class="skill-card__accent" aria-hidden="true">◆</span>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="currentColor"><path d="M8 3h16v2H8zm-2 2h20v2H6zm-2 2h24v22H4V7zm4 2v18h16V9H8zm2 2h12v2H10zm0 4h12v2H10zm0 4h8v2h-8z"/></svg>
+            </div>
+            <h3 class="skill-card__title">Back-End</h3>
+            <ul class="skill-card__list" role="list">
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>Python</li>
+              <li>APIs</li>
+              <li>REST</li>
+            </ul>
+            <span class="skill-card__accent" aria-hidden="true">◆</span>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 4a12 12 0 1 0 0 24A12 12 0 0 0 16 4zm0 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 6 16 10 10 0 0 1 16 6zm0 2a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8zm0 2a6 6 0 0 1 6 6 6 6 0 0 1-6 6 6 6 0 0 1-6-6 6 6 0 0 1 6-6z"/></svg>
+            </div>
+            <h3 class="skill-card__title">Banco de Dados</h3>
+            <ul class="skill-card__list" role="list">
+              <li>PostgreSQL</li>
+              <li>MySQL</li>
+              <li>MongoDB</li>
+              <li>Prisma</li>
+              <li>SQL</li>
+            </ul>
+            <span class="skill-card__accent" aria-hidden="true">◆</span>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 4C9.4 4 4 9.4 4 16s5.4 12 12 12 12-5.4 12-12S22.6 4 16 4zm-1 2.07V9h2V6.07A9.9 9.9 0 0 1 25.93 15H23v2h2.93A9.9 9.9 0 0 1 17 25.93V23h-2v2.93A9.9 9.9 0 0 1 6.07 17H9v-2H6.07A9.9 9.9 0 0 1 15 6.07z"/></svg>
+            </div>
+            <h3 class="skill-card__title">Ferramentas</h3>
+            <ul class="skill-card__list" role="list">
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>VS Code</li>
+              <li>Docker</li>
+              <li>Figma</li>
+            </ul>
+            <span class="skill-card__accent" aria-hidden="true">◆</span>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="currentColor"><path d="M5 5v22h22V5H5zm2 2h18v18H7V7zm4 2v4H9v2h2v4h2v-4h2v-2h-2V9h-2zm5 0v2h2v2h-2v2h2v2h-2v2h4V9h-4z"/></svg>
+            </div>
+            <h3 class="skill-card__title">Outros</h3>
+            <ul class="skill-card__list" role="list">
+              <li>Performance</li>
+              <li>SEO</li>
+              <li>Acessibilidade</li>
+              <li>Testes</li>
+              <li>UI/UX</li>
+            </ul>
+            <span class="skill-card__accent" aria-hidden="true">◆</span>
+          </article>
+        </div>
+
+        <p class="habilidades__note">
+          <span aria-hidden="true">※</span>
+          Conteúdo editável — substituir conforme necessário.
+        </p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         PROJETOS
+    ══════════════════════════════════════════ -->
+    <section class="section projetos" id="projetos" aria-label="Projetos selecionados">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number" aria-hidden="true">04</span>
+          <span class="section-diamond" aria-hidden="true">◆</span>
+          <h2 class="section-title">Projetos selecionados</h2>
+          <a href="#" class="section-cta" aria-label="Ver todos os projetos">
+            Ver todos <span aria-hidden="true">+</span>
+          </a>
+        </div>
+
+        <div class="projetos__grid">
+
+          <article class="project-card animate-on-scroll">
+            <div class="project-card__image">
+              <div class="project-card__img-placeholder" style="--card-hue: 1" aria-hidden="true">
+                <span class="project-card__img-label">PROJETO 01</span>
+                <svg class="project-card__img-icon" viewBox="0 0 60 60" fill="none" aria-hidden="true">
+                  <rect x="5" y="15" width="50" height="35" rx="3" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M18 27l8 8 16-16" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <div class="project-card__status project-card__status--done">Concluído</div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Projeto 01</h3>
+              <p class="project-card__desc">Adicione aqui uma breve descrição do projeto. Este é um texto provisório e editável.</p>
+              <div class="project-card__tags" aria-label="Tecnologias">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JS</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="#" class="btn btn--sm" aria-label="Ver Projeto 01 (em breve)">Ver projeto</a>
+                <a href="#" class="btn btn--ghost-sm" aria-label="GitHub do Projeto 01 (em breve)">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card animate-on-scroll">
+            <div class="project-card__image">
+              <div class="project-card__img-placeholder" style="--card-hue: 2" aria-hidden="true">
+                <span class="project-card__img-label">PROJETO 02</span>
+                <svg class="project-card__img-icon" viewBox="0 0 60 60" fill="none" aria-hidden="true">
+                  <circle cx="30" cy="30" r="20" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M20 30h20M30 20v20" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <div class="project-card__status project-card__status--done">Concluído</div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Projeto 02</h3>
+              <p class="project-card__desc">Adicione aqui uma breve descrição do projeto. Este é um texto provisório e editável.</p>
+              <div class="project-card__tags" aria-label="Tecnologias">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">API</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="#" class="btn btn--sm" aria-label="Ver Projeto 02 (em breve)">Ver projeto</a>
+                <a href="#" class="btn btn--ghost-sm" aria-label="GitHub do Projeto 02 (em breve)">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card animate-on-scroll">
+            <div class="project-card__image">
+              <div class="project-card__img-placeholder" style="--card-hue: 3" aria-hidden="true">
+                <span class="project-card__img-label">PROJETO 03</span>
+                <svg class="project-card__img-icon" viewBox="0 0 60 60" fill="none" aria-hidden="true">
+                  <rect x="8" y="8" width="44" height="44" rx="3" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M8 22h44M22 8v44" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <div class="project-card__status project-card__status--done">Concluído</div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Projeto 03</h3>
+              <p class="project-card__desc">Adicione aqui uma breve descrição do projeto. Este é um texto provisório e editável.</p>
+              <div class="project-card__tags" aria-label="Tecnologias">
+                <span class="tag">Python</span>
+                <span class="tag">SQL</span>
+                <span class="tag">REST</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="#" class="btn btn--sm" aria-label="Ver Projeto 03 (em breve)">Ver projeto</a>
+                <a href="#" class="btn btn--ghost-sm" aria-label="GitHub do Projeto 03 (em breve)">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card animate-on-scroll">
+            <div class="project-card__image">
+              <div class="project-card__img-placeholder" style="--card-hue: 4" aria-hidden="true">
+                <span class="project-card__img-label">PROJETO 04</span>
+                <svg class="project-card__img-icon" viewBox="0 0 60 60" fill="none" aria-hidden="true">
+                  <path d="M10 40L25 20l10 12 8-8 7 16" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                </svg>
+              </div>
+              <div class="project-card__status project-card__status--done">Concluído</div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Projeto 04</h3>
+              <p class="project-card__desc">Adicione aqui uma breve descrição do projeto. Este é um texto provisório e editável.</p>
+              <div class="project-card__tags" aria-label="Tecnologias">
+                <span class="tag">TypeScript</span>
+                <span class="tag">PostgreSQL</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="#" class="btn btn--sm" aria-label="Ver Projeto 04 (em breve)">Ver projeto</a>
+                <a href="#" class="btn btn--ghost-sm" aria-label="GitHub do Projeto 04 (em breve)">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card animate-on-scroll">
+            <div class="project-card__image">
+              <div class="project-card__img-placeholder" style="--card-hue: 5" aria-hidden="true">
+                <span class="project-card__img-label">PROJETO 05</span>
+                <svg class="project-card__img-icon" viewBox="0 0 60 60" fill="none" aria-hidden="true">
+                  <circle cx="30" cy="30" r="15" stroke="currentColor" stroke-width="1.5"/>
+                  <circle cx="30" cy="30" r="25" stroke="currentColor" stroke-width="0.5" opacity="0.5"/>
+                </svg>
+              </div>
+              <div class="project-card__status project-card__status--done">Concluído</div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Projeto 05</h3>
+              <p class="project-card__desc">Adicione aqui uma breve descrição do projeto. Este é um texto provisório e editável.</p>
+              <div class="project-card__tags" aria-label="Tecnologias">
+                <span class="tag">React</span>
+                <span class="tag">Figma</span>
+                <span class="tag">CSS</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="#" class="btn btn--sm" aria-label="Ver Projeto 05 (em breve)">Ver projeto</a>
+                <a href="#" class="btn btn--ghost-sm" aria-label="GitHub do Projeto 05 (em breve)">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card project-card--wip animate-on-scroll">
+            <div class="project-card__image">
+              <div class="project-card__img-placeholder" style="--card-hue: 6" aria-hidden="true">
+                <span class="project-card__img-label">EM BREVE</span>
+                <svg class="project-card__img-icon" viewBox="0 0 60 60" fill="none" aria-hidden="true">
+                  <circle cx="30" cy="30" r="22" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3"/>
+                  <path d="M30 18v12l8 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="project-card__status project-card__status--wip">Em desenvolvimento</div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Em desenvolvimento</h3>
+              <p class="project-card__desc">Novo projeto em construção. Informe as tecnologias utilizadas e uma breve descrição quando estiver pronto.</p>
+              <div class="project-card__tags" aria-label="Tecnologias">
+                <span class="tag">Em breve</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="#" class="btn btn--sm btn--disabled" aria-disabled="true" tabindex="-1">Ver projeto</a>
+                <a href="#" class="btn btn--ghost-sm" aria-label="GitHub do projeto em desenvolvimento">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         CONTATO
+    ══════════════════════════════════════════ -->
+    <section class="section contato" id="contato" aria-label="Contato">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number" aria-hidden="true">05</span>
+          <span class="section-diamond" aria-hidden="true">◆</span>
+          <h2 class="section-title">Vamos criar algo?</h2>
+          <span class="section-line" aria-hidden="true"></span>
+        </div>
+
+        <div class="contato__grid">
+
+          <div class="contato__info animate-on-scroll">
+            <p class="contato__intro">
+              Entre em contato para conversar sobre projetos, ideias ou oportunidades.
+            </p>
+            <ul class="contato__links" role="list" aria-label="Formas de contato">
+              <li>
+                <a href="#" class="contato__link" aria-label="GitHub (em breve)">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.11-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.65 1.65.25 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>GitHub</span>
+                  <em>github.com/seuusuario</em>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="contato__link" aria-label="LinkedIn (em breve)">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.35V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.35-1.85 3.58 0 4.25 2.36 4.25 5.43v6.31zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM3.56 20.45h3.55V9H3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0z"/></svg>
+                  <span>LinkedIn</span>
+                  <em>linkedin.com/in/seuperfil</em>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:seuemail@exemplo.com" class="contato__link">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                  <span>E-mail</span>
+                  <em>seuemail@exemplo.com</em>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="contato__link" aria-label="WhatsApp (em breve)">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.26-.13-1.52-.75-1.75-.83-.24-.09-.41-.13-.58.13-.17.26-.66.83-.81 1-.15.17-.3.19-.56.06-.26-.13-1.09-.4-2.08-1.29-.77-.68-1.29-1.53-1.44-1.79-.15-.26-.02-.4.11-.53.12-.12.26-.3.39-.46.13-.16.17-.26.26-.43.08-.17.04-.32-.02-.45-.06-.13-.58-1.41-.8-1.93-.21-.51-.43-.44-.58-.45-.15-.01-.32-.01-.49-.01-.17 0-.45.06-.69.32-.23.26-.9.88-.9 2.14 0 1.26.92 2.48 1.05 2.65.13.17 1.81 2.77 4.39 3.89.61.26 1.09.42 1.46.54.61.19 1.17.16 1.61.1.49-.07 1.52-.62 1.73-1.22.21-.6.21-1.11.15-1.22-.06-.1-.23-.17-.49-.3z"/><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.37 5.07L2 22l4.93-1.37C8.42 21.5 10.15 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.68 0-3.26-.48-4.6-1.3l-.33-.2-3.41.95.95-3.4-.21-.34C3.48 15.26 3 13.68 3 12c0-4.97 4.03-9 9-9s9 4.03 9 9-4.03 9-9 9z"/></svg>
+                  <span>WhatsApp</span>
+                  <em>(00) 00000-0000</em>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contato__form-col animate-on-scroll">
+            <form class="contact-form" id="contact-form" novalidate aria-label="Formulário de contato">
+              <div class="form-group">
+                <label class="form-label" for="nome">Nome <span class="form-required" aria-label="obrigatório">*</span></label>
+                <input class="form-input" type="text" id="nome" name="nome" placeholder="Seu nome completo" autocomplete="name" required aria-required="true" />
+                <span class="form-error" id="nome-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="email">E-mail <span class="form-required" aria-label="obrigatório">*</span></label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="seu@email.com" autocomplete="email" required aria-required="true" />
+                <span class="form-error" id="email-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="assunto">Assunto <span class="form-required" aria-label="obrigatório">*</span></label>
+                <input class="form-input" type="text" id="assunto" name="assunto" placeholder="Sobre o que você quer falar?" required aria-required="true" />
+                <span class="form-error" id="assunto-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="mensagem">Mensagem <span class="form-required" aria-label="obrigatório">*</span></label>
+                <textarea class="form-input form-textarea" id="mensagem" name="mensagem" placeholder="Descreva seu projeto ou ideia..." rows="5" required aria-required="true"></textarea>
+                <span class="form-error" id="mensagem-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-footer">
+                <button class="btn btn--primary btn--full" type="submit" id="submit-btn">
+                  <span class="btn-text">Enviar mensagem</span>
+                  <span class="btn-loading" aria-hidden="true">Enviando...</span>
+                  <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 21l21-9L2 3v7l15 2-15 2v7z"/></svg>
+                </button>
+              </div>
+
+              <div class="form-feedback" id="form-feedback" role="status" aria-live="polite" aria-atomic="true"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <span class="logo-monogram" aria-label="JVG — monograma">JVG</span>
+          <p class="footer__name">João Vitor Gomes</p>
+          <p class="footer__tagline">Keep the fire alive.</p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Links do rodapé">
+          <ul role="list">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__social" aria-label="Redes sociais">
+          <a href="#" class="footer__social-link" aria-label="GitHub (em breve)">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.11-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.65 1.65.25 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="LinkedIn (em breve)">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.35V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.35-1.85 3.58 0 4.25 2.36 4.25 5.43v6.31zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM3.56 20.45h3.55V9H3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0z"/></svg>
+          </a>
+          <a href="mailto:seuemail@exemplo.com" class="footer__social-link" aria-label="Enviar e-mail">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">
+          © <span id="current-year"></span> João Vitor Gomes. Desenvolvido com HTML, CSS e JavaScript.
+        </p>
+        <button type="button" class="back-to-top" id="back-to-top" aria-label="Voltar ao topo">
+          ↑ Topo
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -165,9 +165,11 @@ const $$ = (selector, context = document) => Array.from(context.querySelectorAll
 
   Object.values(fields).forEach(({ el }) => {
     if (!el) return;
+    el.setAttribute('aria-describedby', el.id + '-error');
     el.addEventListener('input', () => {
       el.classList.toggle('is-filled', el.value.trim().length > 0);
       el.classList.remove('is-error');
+      el.removeAttribute('aria-invalid');
     });
     el.addEventListener('blur', () => validateField(el));
   });
@@ -181,10 +183,12 @@ const $$ = (selector, context = document) => Array.from(context.querySelectorAll
       field.error.textContent = errMsg;
       inputEl.classList.add('is-error');
       inputEl.classList.remove('is-filled');
+      inputEl.setAttribute('aria-invalid', 'true');
       return false;
     }
     field.error.textContent = '';
     inputEl.classList.remove('is-error');
+    inputEl.setAttribute('aria-invalid', 'false');
     return true;
   }
 
@@ -223,15 +227,33 @@ const $$ = (selector, context = document) => Array.from(context.querySelectorAll
     const assunto = fields.assunto.el.value.trim();
     const mensagem = fields.mensagem.el.value.trim();
 
-    const body = `Nome: ${nome}\nE-mail: ${email}\n\n${mensagem}`;
-    const mailtoLink = `mailto:joaohuhuhun@gmail.com?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(body)}`;
+    const recipient = 'joaohuhuhun@gmail.com';
+    const emailSubject = `Contato pelo portfólio: ${assunto}`;
+    const emailBody = `Olá, João Vitor.\n\nVocê recebeu uma nova mensagem pelo seu portfólio.\n\nNome: ${nome}\nE-mail para resposta: ${email}\nAssunto: ${assunto}\n\nMensagem:\n${mensagem}`;
 
-    window.location.href = mailtoLink;
+    const gmailUrl =
+      `https://mail.google.com/mail/?view=cm&fs=1` +
+      `&to=${encodeURIComponent(recipient)}` +
+      `&su=${encodeURIComponent(emailSubject)}` +
+      `&body=${encodeURIComponent(emailBody)}`;
 
-    showFeedback('success', '✓ Seu aplicativo de e-mail foi aberto. Envie a mensagem para entrar em contato.');
+    const newWindow = window.open(gmailUrl, '_blank', 'noopener,noreferrer');
+
+    if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
+      const mailtoUrl =
+        `mailto:${recipient}` +
+        `?subject=${encodeURIComponent(emailSubject)}` +
+        `&body=${encodeURIComponent(emailBody)}`;
+      window.location.href = mailtoUrl;
+    }
+
+    showFeedback('success', '✓ Seu aplicativo de e-mail foi aberto. Revise a mensagem e clique em Enviar.');
     form.reset();
     Object.values(fields).forEach(({ el }) => {
-      if (el) el.classList.remove('is-filled', 'is-error');
+      if (el) {
+        el.classList.remove('is-filled', 'is-error');
+        el.removeAttribute('aria-invalid');
+      }
     });
   });
 })();

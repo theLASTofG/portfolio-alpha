@@ -175,6 +175,7 @@ button {
     scroll-behavior: auto !important;
   }
   .animate-on-scroll { opacity: 1 !important; transform: none !important; }
+  .skill-card { opacity: 1 !important; transform: none !important; }
 }
 
 /* ──────────────────────────────────────────
@@ -903,21 +904,16 @@ button {
   position: relative;
 }
 
-.sobre__photo-placeholder {
-  width: 100%;
-  aspect-ratio: 5/6;
-  border: var(--border);
-  border-radius: var(--radius-sm);
-  overflow: hidden;
-  background: var(--color-bg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.sobre__photo-placeholder svg {
+.about-photo {
   width: 100%;
   height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  border: var(--border);
+  border-radius: var(--radius-sm);
+  aspect-ratio: 5 / 6;
+  background: var(--color-bg);
 }
 
 /* Decorative corner lines */
@@ -941,35 +937,6 @@ button {
   height: 40px;
   border-bottom: 2px solid var(--color-primary);
   border-right: 2px solid var(--color-primary);
-}
-
-.sobre__photo-badge {
-  position: absolute;
-  bottom: var(--sp-4);
-  right: var(--sp-4);
-  background: var(--color-bg);
-  border: var(--border);
-  padding: var(--sp-2) var(--sp-3);
-  text-align: center;
-}
-
-.sobre__photo-badge-text {
-  display: block;
-  font-family: var(--font-display);
-  font-weight: 900;
-  font-size: var(--fs-sm);
-  color: var(--color-action);
-  letter-spacing: 0.1em;
-}
-
-.sobre__photo-badge-sub {
-  display: block;
-  font-family: var(--font-mono);
-  font-size: 0.65rem;
-  color: var(--color-text-muted);
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  margin-top: 2px;
 }
 
 .sobre__text-col {
@@ -1608,6 +1575,11 @@ button {
 .animate-on-scroll.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.skill-card.is-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
 }
 
 /* Stagger children in grids */

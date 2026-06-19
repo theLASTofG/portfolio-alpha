@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" fill="none">
+  <rect width="480" height="300" fill="#0a0b08"/>
+  <rect x="0" y="0" width="480" height="300" fill="url(#grid)" opacity="0.08"/>
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <rect width="24" height="24" fill="none" stroke="#4C472D" stroke-width="0.5"/>
+    </pattern>
+    <linearGradient id="shieldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#737A3F"/>
+      <stop offset="100%" stop-color="#C69A20"/>
+    </linearGradient>
+  </defs>
+  <!-- Shield icon -->
+  <path d="M240 55 L310 90 L310 150 Q310 210 240 245 Q170 210 170 150 L170 90 Z" fill="none" stroke="#C69A20" stroke-width="2" opacity="0.7"/>
+  <path d="M240 65 L298 93 L298 148 Q298 200 240 232 Q182 200 182 148 L182 93 Z" fill="none" stroke="#737A3F" stroke-width="1" opacity="0.4"/>
+  <!-- Car silhouette inside shield -->
+  <rect x="210" y="155" width="60" height="28" rx="6" fill="#737A3F" opacity="0.3"/>
+  <rect x="215" y="160" width="18" height="12" rx="2" fill="#0a0b08"/>
+  <rect x="247" y="160" width="18" height="12" rx="2" fill="#0a0b08"/>
+  <circle cx="220" cy="187" r="7" fill="none" stroke="#C69A20" stroke-width="1.5" opacity="0.6"/>
+  <circle cx="260" cy="187" r="7" fill="none" stroke="#C69A20" stroke-width="1.5" opacity="0.6"/>
+  <!-- Name -->
+  <text x="240" y="278" text-anchor="middle" fill="#E6DDC7" font-family="'Unbounded',sans-serif" font-size="22" font-weight="700" letter-spacing="3">BLACKSHIELD</text>
+  <text x="240" y="295" text-anchor="middle" fill="#AAA18C" font-family="'IBM Plex Mono',monospace" font-size="8" letter-spacing="4" opacity="0.6">WEBSITE</text>
+  <!-- Accent line -->
+  <rect x="180" y="260" width="120" height="1" fill="#C69A20" opacity="0.3"/>
+  <!-- Corner diamonds -->
+  <text x="16" y="22" fill="#7B292B" font-size="10" font-family="monospace" opacity="0.5">◆</text>
+  <text x="464" y="22" fill="#7B292B" font-size="10" font-family="monospace" opacity="0.5">◆</text>
+  <text x="16" y="290" fill="#7B292B" font-size="10" font-family="monospace" opacity="0.5">◆</text>
+  <text x="464" y="290" fill="#7B292B" font-size="10" font-family="monospace" opacity="0.5">◆</text>
+</svg>

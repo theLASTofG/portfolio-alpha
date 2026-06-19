@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" fill="none">
+  <rect width="480" height="300" fill="#0a0b08"/>
+  <rect x="0" y="0" width="480" height="300" fill="url(#grid)" opacity="0.08"/>
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <rect width="24" height="24" fill="none" stroke="#4C472D" stroke-width="0.5"/>
+    </pattern>
+    <linearGradient id="lotusGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C69A20"/>
+      <stop offset="100%" stop-color="#9AA064"/>
+    </linearGradient>
+  </defs>
+  <!-- Lotus / mandala inspired icon -->
+  <g transform="translate(240, 140)" opacity="0.7">
+    <!-- Petals -->
+    <ellipse cx="0" cy="-32" rx="12" ry="28" fill="none" stroke="#9AA064" stroke-width="1.2" opacity="0.5"/>
+    <ellipse cx="0" cy="-32" rx="12" ry="28" fill="none" stroke="#9AA064" stroke-width="1.2" opacity="0.5" transform="rotate(30)"/>
+    <ellipse cx="0" cy="-32" rx="12" ry="28" fill="none" stroke="#9AA064" stroke-width="1.2" opacity="0.5" transform="rotate(-30)"/>
+    <ellipse cx="0" cy="-32" rx="12" ry="28" fill="none" stroke="#9AA064" stroke-width="1.2" opacity="0.5" transform="rotate(60)"/>
+    <ellipse cx="0" cy="-32" rx="12" ry="28" fill="none" stroke="#9AA064" stroke-width="1.2" opacity="0.5" transform="rotate(-60)"/>
+    <!-- Center -->
+    <circle cx="0" cy="0" r="14" fill="none" stroke="#C69A20" stroke-width="1.5" opacity="0.6"/>
+    <circle cx="0" cy="0" r="6" fill="none" stroke="#C69A20" stroke-width="1"/>
+    <circle cx="0" cy="0" r="2" fill="#C69A20" opacity="0.8"/>
+    <!-- Outer circle -->
+    <circle cx="0" cy="0" r="44" fill="none" stroke="#4C472D" stroke-width="0.5" opacity="0.3"/>
+  </g>
+  <!-- Name -->
+  <text x="240" y="230" text-anchor="middle" fill="#E6DDC7" font-family="'Fraunces',serif" font-size="18" font-weight="600" letter-spacing="2">Gloria Martins</text>
+  <text x="240" y="248" text-anchor="middle" fill="#AAA18C" font-family="'IBM Plex Mono',monospace" font-size="8" letter-spacing="3" opacity="0.6">WEBSITE PROFISSIONAL</text>
+  <!-- Accent line -->
+  <rect x="175" y="210" width="130" height="1" fill="#9AA064" opacity="0.25"/>
+  <!-- Corner diamonds -->
+  <text x="16" y="22" fill="#7B292B" font-size="10" font-family="monospace" opacity="0.5">◆</text>
+  <text x="464" y="22" fill="#7B292B" font-size="10" font-family="monospace" opacity="0.5">◆</text>
+  <text x="16" y="290" fill="#7B292B" font-size="10" font-family="monospace" opacity="0.5">◆</text>
+  <text x="464" y="290" fill="#7B292B" font-size="10" font-family="monospace" opacity="0.5">◆</text>
+</svg>

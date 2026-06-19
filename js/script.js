@@ -207,7 +207,7 @@ const $$ = (selector, context = document) => Array.from(context.querySelectorAll
     feedback.textContent = '';
   }
 
-  form.addEventListener('submit', async function (e) {
+  form.addEventListener('submit', function (e) {
     e.preventDefault();
     hideFeedback();
 
@@ -218,27 +218,22 @@ const $$ = (selector, context = document) => Array.from(context.querySelectorAll
       return;
     }
 
-    submitBtn.classList.add('is-loading');
-    submitBtn.setAttribute('disabled', 'true');
+    const nome = fields.nome.el.value.trim();
+    const email = fields.email.el.value.trim();
+    const assunto = fields.assunto.el.value.trim();
+    const mensagem = fields.mensagem.el.value.trim();
 
-    try {
-      await simulateSend();
-      showFeedback('success', '✓ Mensagem enviada com sucesso! Retornarei em breve.');
-      form.reset();
-      Object.values(fields).forEach(({ el }) => {
-        if (el) el.classList.remove('is-filled', 'is-error');
-      });
-    } catch {
-      showFeedback('error', '⚠ Erro ao enviar. Tente novamente ou use o e-mail diretamente.');
-    } finally {
-      submitBtn.classList.remove('is-loading');
-      submitBtn.removeAttribute('disabled');
-    }
+    const body = `Nome: ${nome}\nE-mail: ${email}\n\n${mensagem}`;
+    const mailtoLink = `mailto:joaohuhuhun@gmail.com?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailtoLink;
+
+    showFeedback('success', '✓ Seu aplicativo de e-mail foi aberto. Envie a mensagem para entrar em contato.');
+    form.reset();
+    Object.values(fields).forEach(({ el }) => {
+      if (el) el.classList.remove('is-filled', 'is-error');
+    });
   });
-
-  function simulateSend() {
-    return new Promise((resolve) => setTimeout(resolve, 1500));
-  }
 })();
 
 (function initBackToTop() {

@@ -1032,7 +1032,7 @@ button {
 
 .habilidades__categories {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--sp-4);
 }
 
@@ -1093,29 +1093,95 @@ button {
 .skill-card__list {
   display: flex;
   flex-direction: column;
-  gap: var(--sp-1);
+  gap: 0;
 }
 
 .skill-card__list li {
   font-family: var(--font-body);
   font-size: var(--fs-sm);
   color: var(--color-text-muted);
-  padding: var(--sp-1) 0;
+  padding: var(--sp-2) 0;
   border-bottom: 1px solid rgba(76, 71, 45, 0.4);
-  display: flex;
-  align-items: center;
-  gap: var(--sp-2);
   transition: color var(--transition-fast);
 }
 
+.skill-card__list li:last-child {
+  border-bottom: none;
+}
+
 .skill-card__list li::before {
-  content: '—';
-  color: var(--color-border-light);
-  font-size: 0.7rem;
+  content: none;
 }
 
 .skill-card:hover .skill-card__list li {
   color: var(--color-text);
+}
+
+.skill-card:hover .skill-item__desc {
+  color: var(--color-text-muted);
+}
+
+/* Tool list items (dash prefix) */
+.skill-tool {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+.skill-tool::before {
+  content: '—';
+  color: var(--color-border-light);
+  font-size: 0.7rem;
+  flex-shrink: 0;
+}
+
+.skill-card:hover .skill-tool {
+  color: var(--color-text);
+}
+
+/* Detailed skill items (name + level + description) */
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+}
+
+.skill-item__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--sp-2);
+  flex-wrap: wrap;
+}
+
+.skill-item__name {
+  font-family: var(--font-body);
+  font-weight: 500;
+  color: var(--color-text);
+  font-size: var(--fs-sm);
+  line-height: 1.4;
+}
+
+.skill-item__level {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-primary-light);
+  background: rgba(115, 122, 63, 0.1);
+  border: 1px solid rgba(115, 122, 63, 0.2);
+  padding: 1px 6px;
+  border-radius: 2px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.skill-item__desc {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  margin: 0;
 }
 
 .skill-card__accent {
@@ -1124,18 +1190,7 @@ button {
   align-self: flex-end;
 }
 
-.habilidades__note {
-  margin-top: var(--sp-8);
-  font-family: var(--font-mono);
-  font-size: var(--fs-xs);
-  color: var(--color-border-light);
-  letter-spacing: 0.1em;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--sp-2);
-}
+
 
 /* ──────────────────────────────────────────
    12. PROJETOS
@@ -1580,7 +1635,7 @@ button {
   }
 
   .habilidades__categories {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .projetos__grid {

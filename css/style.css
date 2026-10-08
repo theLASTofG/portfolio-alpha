@@ -2466,3 +2466,72 @@ button {
     word-break: normal;
   }
 }
+
+/* Ajustes finais de leitura e composição para telas móveis */
+@media (max-width: 768px) {
+  .hero__tagline { font-size: 0.84rem; }
+
+  .sobre__intro {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+
+  .sobre__text {
+    font-size: 0.83rem;
+    line-height: 1.58;
+  }
+
+  .sobre__subtitle { font-size: 1rem; }
+  .skill-item__name, .skill-tool { font-size: 0.75rem; }
+  .skill-item__desc { font-size: 0.68rem; }
+  .project-card__desc { font-size: 0.76rem; }
+  .contato__intro { font-size: 0.86rem; }
+}
+
+@media (max-width: 520px) {
+  .sobre__grid {
+    display: block;
+  }
+
+  .sobre__image-col {
+    float: left;
+    width: 116px;
+    margin: 0 0.9rem 0.55rem 0;
+  }
+
+  .sobre__photo-frame {
+    width: 100%;
+  }
+
+  .sobre__text-col {
+    display: block;
+  }
+
+  .sobre__text-col > * + * {
+    margin-top: 1rem;
+  }
+
+  .sobre__interests {
+    clear: both;
+  }
+
+  .sobre__goals {
+    margin-top: 0.9rem !important;
+  }
+
+  .sobre__actions {
+    margin-top: 1rem !important;
+  }
+
+  .sobre__grid::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+@media (max-width: 350px) {
+  .sobre__image-col {
+    width: 98px;
+    margin-right: 0.75rem;
+  }
